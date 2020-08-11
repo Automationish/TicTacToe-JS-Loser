@@ -47,8 +47,8 @@ canvas.addEventListener('click', function(event){
         y = event.pageY - canvas.offsetTop - canvas.clientTop;
         
     if (ongoingGame === false){
-        player1 = new Player("X", true, WINNINGCOMBINATIONS);
-        player2 = new Player("O", false, WINNINGCOMBINATIONS);
+        player1 = new Player("X", false, WINNINGCOMBINATIONS);
+        player2 = new Player("O", true, WINNINGCOMBINATIONS);
         game = new Game(player1, player2, WINNINGCOMBINATIONS);
         ongoingGame = true;
         game.currentPlayer = player1;
